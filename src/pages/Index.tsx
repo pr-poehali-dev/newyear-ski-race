@@ -231,7 +231,7 @@ const Index = () => {
               <div className="space-y-6 text-white text-lg mb-8">
                 <div className="flex items-center justify-center gap-3">
                   <Icon name="MapPin" className="text-amber-300" size={24} />
-                  <span>Москва, Парк Сокольники</span>
+                  <span>Москва, Лужники, Лыжная трасса</span>
                 </div>
                 <div className="flex items-center justify-center gap-3">
                   <Icon name="Phone" className="text-amber-300" size={24} />
@@ -258,6 +258,48 @@ const Index = () => {
               </Button>
             </CardContent>
           </Card>
+        </div>
+      </section>
+
+      <section className="py-20 bg-white/5 backdrop-blur-sm">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-16 text-glow">
+            Как добраться
+          </h2>
+          
+          <div className="max-w-5xl mx-auto">
+            <Card className="bg-white/10 backdrop-blur-md border-white/20 overflow-hidden">
+              <CardContent className="p-0">
+                <div className="aspect-video w-full">
+                  <iframe 
+                    src="https://yandex.ru/map-widget/v1/?ll=37.553911%2C55.715551&z=15&pt=37.553911%2C55.715551&l=map" 
+                    width="100%" 
+                    height="100%" 
+                    frameBorder="0"
+                    className="rounded-t-lg"
+                  />
+                </div>
+                <div className="p-8 text-white">
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+                        <Icon name="MapPin" className="text-amber-300" size={24} />
+                        Адрес
+                      </h3>
+                      <p className="text-blue-200">Лужники, Лыжная трасса<br />Москва, 119048</p>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+                        <Icon name="Train" className="text-amber-300" size={24} />
+                        Как добраться
+                      </h3>
+                      <p className="text-blue-200">Метро: Лужники, Воробьёвы горы<br />Автобус: 111, 132, 902</p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
 
