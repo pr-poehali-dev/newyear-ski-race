@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import Icon from "@/components/ui/icon";
 import { useEffect, useState } from "react";
 
@@ -258,6 +259,72 @@ const Index = () => {
               </Button>
             </CardContent>
           </Card>
+        </div>
+      </section>
+
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-16 text-glow">
+            Частые вопросы
+          </h2>
+          
+          <div className="max-w-3xl mx-auto">
+            <Accordion type="single" collapsible className="space-y-4">
+              <AccordionItem value="item-1" className="bg-white/10 backdrop-blur-md border-white/20 rounded-xl px-6">
+                <AccordionTrigger className="text-xl font-semibold text-white hover:text-amber-300">
+                  Нужна ли специальная подготовка для участия?
+                </AccordionTrigger>
+                <AccordionContent className="text-lg text-blue-200">
+                  Для дистанции 5 км специальная подготовка не требуется — подойдёт базовое умение стоять на лыжах. Для дистанций 10 и 15 км рекомендуется иметь опыт лыжных тренировок.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-2" className="bg-white/10 backdrop-blur-md border-white/20 rounded-xl px-6">
+                <AccordionTrigger className="text-xl font-semibold text-white hover:text-amber-300">
+                  Можно ли использовать свои лыжи?
+                </AccordionTrigger>
+                <AccordionContent className="text-lg text-blue-200">
+                  Да, все участники должны иметь своё лыжное снаряжение. Пункт проката на месте не предусмотрен. Убедитесь, что лыжи в хорошем состоянии и подходят для классического хода.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-3" className="bg-white/10 backdrop-blur-md border-white/20 rounded-xl px-6">
+                <AccordionTrigger className="text-xl font-semibold text-white hover:text-amber-300">
+                  Что входит в стартовый пакет?
+                </AccordionTrigger>
+                <AccordionContent className="text-lg text-blue-200">
+                  Стартовый пакет включает: номер участника, чип хронометража, памятную медаль финишера, горячий чай на финише, новогодний сувенир и страховку на время гонки.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-4" className="bg-white/10 backdrop-blur-md border-white/20 rounded-xl px-6">
+                <AccordionTrigger className="text-xl font-semibold text-white hover:text-amber-300">
+                  Будет ли работать камера хранения?
+                </AccordionTrigger>
+                <AccordionContent className="text-lg text-blue-200">
+                  Да, в пункте регистрации будет организована бесплатная камера хранения для личных вещей. Работает с 20:00 до 03:00. Рекомендуем не брать с собой ценные вещи.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-5" className="bg-white/10 backdrop-blur-md border-white/20 rounded-xl px-6">
+                <AccordionTrigger className="text-xl font-semibold text-white hover:text-amber-300">
+                  Нужна ли медицинская справка?
+                </AccordionTrigger>
+                <AccordionContent className="text-lg text-blue-200">
+                  Да, для участия обязательна медицинская справка о допуске к соревнованиям (форма 083/5-89) не старше 6 месяцев. Справка проверяется при получении стартового номера.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-6" className="bg-white/10 backdrop-blur-md border-white/20 rounded-xl px-6">
+                <AccordionTrigger className="text-xl font-semibold text-white hover:text-amber-300">
+                  Что делать, если я не успею на старт в полночь?
+                </AccordionTrigger>
+                <AccordionContent className="text-lg text-blue-200">
+                  Старт массовый в 00:00. Опоздавшие участники смогут стартовать в течение 15 минут после основного старта, но результаты будут учтены отдельно в категории «Вне зачёта».
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          </div>
         </div>
       </section>
 
